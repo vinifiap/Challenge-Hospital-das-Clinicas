@@ -16,7 +16,6 @@
     padding: 0;
 }
 /*NAV*/
-
 nav li, a, button {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -26,7 +25,7 @@ nav li, a, button {
 }
 
 header {
-    background-color: #24252A;
+    background-color: var(--nav);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,7 +53,7 @@ header {
 
 .nav_links li a:hover {
     transition: all 0.3s ease 0s;
-    color:#0088a9
+    color: var(--copyright);
 }
 
 button {
@@ -111,37 +110,19 @@ button:hover {
 }
 
 
-/*MAIN*/
+
+/*main*/
 main {
     height: 80vh;
+    background-color: var(--main);
 }
+
 
 /*FOOTER*/
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-:root {
-    --color-neutral-0: #0E0C0C;
-    --color-neutral-10: #171717;
-    --color-neutral-30: #A8A29E;
-    --color-neutral-40: #F5F5F5;
-}
-
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 1px;
-}
-
-main {
-    height: 80vh;
-}
-
 footer {
     width: 100%;
-    color: var(--color-neutral-40);
+    color: var(--footer);
 }
 
 .footer-link{
@@ -149,7 +130,7 @@ footer {
 }
 
 #footer_content {
-    background-color: var(--color-neutral-10);
+    background-color: var(--footer);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
@@ -176,7 +157,7 @@ footer {
     text-align: center;
     height: 2.5rem;
     width: 2.5em;
-    color: var(--color-neutral-40);
+    color: var(--copyright);
     border-radius: 50%;
     transition: all 0.4s;
 }
@@ -211,7 +192,7 @@ footer {
 }
 
 .footer-list .footer-link:hover {
-    color: #7F37C9;
+    color: var(--footer);
 }
 
 #footer_subscribe {
@@ -221,13 +202,13 @@ footer {
 }
 
 #footer_subscribe p {
-    color: var(--color-neutral-30);
+    color: var(--nav);
 }
 
 #input_group {
     display: flex;
     align-items: center;
-    background-color: var(--color-neutral-0);
+    background-color: var(--copyright);
     border-radius: 4px;
 }
 
@@ -256,11 +237,13 @@ footer {
 #footer_copyright {
     display: flex;
     justify-content: center;
-    background-color: var(--color-neutral-0);
+    background-color: var(--copyright);
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;
 }
+
+/*media queri*/
 
 @media (max-width: 1201px) {
     #footer_content {
