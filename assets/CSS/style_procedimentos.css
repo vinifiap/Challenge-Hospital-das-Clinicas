@@ -35,10 +35,12 @@ header {
 }
 
 .logo {
-    cursor: pointer;
-    width: 50px;
-    height: 10%;
+    width: 200px;
+    padding: 0;
+    margin: 0;
+    height: 100px;
 }
+
 
 .nav_links {
     list-style: none;
@@ -116,6 +118,7 @@ button:hover {
 /*main*/
 main {
     height: 80vh;
+    background: linear-gradient(to top, var(--footer), var(--main));
 }
 
 
@@ -133,14 +136,14 @@ footer {
 }
 
 #footer_content {
-    background-color: var(--main);
+    background-color: var(--nav);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 3rem 3.5rem;
+    padding: 5rem 3.5rem;
 }
 
-#footer_contacts h1{
-    margin-bottom: 0.75rem;
+#footer_contacts img{
+    width: 150px;
 }
 
 #footer_social_media {
@@ -190,7 +193,7 @@ footer {
 }
 
 .footer-list .footer-link {
-    color: var(--color-neutral-30);
+    color: var(--footer);
     transition: all 0.4s;
 }
 
@@ -241,7 +244,7 @@ footer {
 #footer_copyright {
     display: flex;
     justify-content: center;
-    background-color: var(--copyright);
+    background-color: var(--nav);
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;

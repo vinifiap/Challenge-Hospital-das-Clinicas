@@ -14,6 +14,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: var(--fonte);
 }
 
 
@@ -34,11 +35,14 @@ header {
     padding: 5px 5%;
 }
 
+
 .logo {
-    cursor: pointer;
-    width: 50px;
-    height: 10%;
+    width: 200px;
+    padding: 0;
+    margin: 0;
+    height: 100px;
 }
+
 
 .nav_links {
     list-style: none;
@@ -60,11 +64,14 @@ header {
 
 button {
     padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
+    color: rgba(0, 136, 169, 1);
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    color: var(--nav);
+    font-size: 16px;
+    font-weight: 5000;
 }
 
 button:hover {
@@ -114,9 +121,6 @@ button:hover {
 
 
 /*main*/
-main {
-    background-color: var(--main);
-}
 
 
 
@@ -131,6 +135,7 @@ main {
     font-size: 3rem;
     font-weight: 300;
     padding-right: 30%;
+    color: var(--footer);
 }
 
 #banner-text button{
@@ -142,9 +147,9 @@ main {
     background-color: var(--main);
     font-size: 1rem;
     font-weight: 100;
-    cursor:pointer
-
+    cursor:pointer;
 }
+
 #units{
     background: linear-gradient(to bottom, var(--footer), var(--main));
     margin: 3rem;
@@ -192,10 +197,69 @@ main {
     cursor:pointer
 
 }
+#problem-impact {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.problem-impact-text {
+    background-color: var(--main);
+    width:  100vw;
+    padding-top: 20px;
+}
+
+
+#problem{
+    padding:1rem;
+    border-radius: 1rem;
+}
+#problem p{
+    list-style-type: decimal;
+    font-size: 1.3rem;
+
+}
+#problem h2{
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--nav);
+}
+#problem h3{
+    font-size: 1.4rem;
+    color: var(--nav);
+}
+
+#problem-impact li {
+    color: var(--nav);
+    list-style: none;
+}
+
+#problem-solving{
+    padding:1rem;
+    border-radius: 1rem;
+}
+#problem-solving p{
+    list-style-type: decimal;
+    font-size: 1.3rem;
+
+}
+#problem-solving h2{
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--nav);
+}
+#problem-solving h3{
+    font-size: 1.4rem;
+    color: var(--nav);
+}
 
 /*FOOTER*/
 
 footer {
+
     width: 100%;
     color: var(--footer);
 }
@@ -205,14 +269,14 @@ footer {
 }
 
 #footer_content {
-    background-color: var(--main);
+    background-color: var(--nav);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 3rem 3.5rem;
+    padding: 5rem 3.5rem;
 }
 
-#footer_contacts h1{
-    margin-bottom: 0.75rem;
+#footer_contacts img{
+    width: 150px;
 }
 
 #footer_social_media {
@@ -313,7 +377,7 @@ footer {
 #footer_copyright {
     display: flex;
     justify-content: center;
-    background-color: var(--copyright);
+    background-color: var(--nav);
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;
