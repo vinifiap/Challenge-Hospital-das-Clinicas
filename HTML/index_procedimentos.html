@@ -1,12 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/CSS/style_procedimentos.css">
     <title>Procedimentos</title>
 </head>
 <body>
+    <header>
+        <img class="logo" src="./img/Blue Modern Technology & Gaming Logo.png" alt="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index_procedimentos.html">Procedimentos</a></li>
+                <li><a href="./index_preparatorios.html">Preparatórios</a></li>
+                <li><a href="./index_planos.html">Planos</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button>Contact</button></a>
+    </header>
+
+
+    <main>
+        <section class="procedures-section">
+            <h1>Procedimentos</h1>
+            <p>O que fazer antes dos seus exames?</p>
+            <input type="text" id="procedure-search" placeholder="Digite aqui qual seu procedimento...">
+            <button id="search-btn">Buscar</button>
+            <div id="procedure-description">
+              <!-- O resultado da busca será exibido aqui -->
+              <p>Aqui haverá um descritivo de preparação do exame para o paciente dependendo da resposta do quadro acima.</p>
+            </div>
+          </section>
+    </main>
+
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                    <h1>logo</h1>
+                    <p>It's all your dreams</p>
+                    <div id="footer_social_media">
+                        <a href="#" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer-link" id="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="footer-link" id="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+            </div>
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Tech</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Adventures</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Music</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Products</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">App</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Desktop</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Cloud</a>
+                </li>
+            </ul>
+            
+            <div id="footer_subscribe">
+                    <h3>Subscribe</h3>
+                    <p>Enter your E-mail to get modified about our news solutions</p>
+
+                    <div id="input_group">
+                        <input type="email" id="email">
+                        <button>
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                    </div>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2024 all rights reserved
+        </div>
+    </footer>
     <script src="../assets/SCRIPT/script_procedimentos.js"></script>
 </body>
 </html>
