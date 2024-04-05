@@ -4,7 +4,7 @@
 :root {
     --fonte: "Montserrat", sans-serif;
     --nav: #9195F6;
-    --main: linear(#B7C9F2, #FFFFFF);
+    --main: #B7C9F2;
     --copyright: #B7C9F2;
     --footer: #FFFFFF;
 
@@ -115,7 +115,6 @@ button:hover {
 
 /*main*/
 main {
-    height: 80vh;
     background-color: var(--main);
 }
 
@@ -156,7 +155,7 @@ main {
     padding-top: 3rem;
     padding-left: 5rem;
     font-size: 3rem;
-    color: #009BA2;
+    color: var(--main);
     border-color: black;
 
 }
@@ -206,7 +205,7 @@ footer {
 }
 
 #footer_content {
-    background-color: var(--footer);
+    background-color: var(--main);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
@@ -263,7 +262,7 @@ footer {
 }
 
 .footer-list .footer-link {
-    color: var(--color-neutral-30);
+    color: var(--footer);
     transition: all 0.4s;
 }
 
@@ -278,13 +277,13 @@ footer {
 }
 
 #footer_subscribe p {
-    color: var(--nav);
+    color: var(--footer);
 }
 
 #input_group {
     display: flex;
     align-items: center;
-    background-color: var(--copyright);
+    background-color: var(--footer);
     border-radius: 4px;
 }
 
@@ -292,12 +291,13 @@ footer {
     all: unset;
     padding: 0.75rem;
     width: 100%;
+    color: #000000;
 }
 
 #input_group button {
-    background-color: #7F37C9;
+    background-color: rgba(0, 136, 169, 1);
     border: none;
-    color: var(--color-neutral-40);
+    color: var(--main);
     padding: 0px 1.25rem;
     font-size: 1.125rem;
     height: 100%;

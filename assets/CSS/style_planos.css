@@ -3,8 +3,8 @@
 
 :root {
     --fonte: "Montserrat", sans-serif;
-    --nav: #9195F6;
-    --main: linear(#B7C9F2, #FFFFFF);
+    --nav: #b7b9f4;
+    --main: #B7C9F2;;
     --copyright: #B7C9F2;
     --footer: #FFFFFF;
 
@@ -114,7 +114,6 @@ button:hover {
 /*main*/
 main {
     height: 80vh;
-    background-color: var(--main);
 }
 
 
@@ -130,7 +129,7 @@ footer {
 }
 
 #footer_content {
-    background-color: var(--footer);
+    background-color: var(--main);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
@@ -208,7 +207,7 @@ footer {
 #input_group {
     display: flex;
     align-items: center;
-    background-color: var(--copyright);
+    background-color: var(--footer);
     border-radius: 4px;
 }
 
@@ -216,12 +215,13 @@ footer {
     all: unset;
     padding: 0.75rem;
     width: 100%;
+    color: #000000;
 }
 
 #input_group button {
-    background-color: #7F37C9;
+    background-color: rgba(0, 136, 169, 1);
     border: none;
-    color: var(--color-neutral-40);
+    color: var(--footer);
     padding: 0px 1.25rem;
     font-size: 1.125rem;
     height: 100%;
