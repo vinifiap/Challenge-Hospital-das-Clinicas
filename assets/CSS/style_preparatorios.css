@@ -134,8 +134,7 @@ main {
     margin-top: 20px;
 }
 .video-container {
-    overflow: hidden; /* Previne o overflow */
-    /* Razão de aspecto do vídeo: 16:9 */
+    overflow: hidden; 
     padding: 250px 480px;
     margin-left: 250px;
     position: relative;
@@ -152,6 +151,59 @@ main {
     border-radius: 10px ;
     padding: 10px 10px;
 }
+
+@media (max-width: 1201px) {
+    .main {
+      height: 50vh; 
+    }
+    .video-container {
+      padding: 200px 380px; 
+      margin-left: 200px; 
+    }
+    .video-container iframe {
+      border-width: 8px; 
+    }
+  }
+
+  @media (min-width: 901px) and (max-width: 1200px) {
+    .video-container {
+      padding: 150px 360px;
+      margin-left: 150px;
+    }
+    .video-container iframe {
+      border-width: 7px;
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 900px) {
+    .main {
+      height: 40vh;
+    }
+    .video-container {
+      padding: 100px 280px;
+      margin-left: 100px;
+    }
+    .video-container iframe {
+      border-width: 6px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .main {
+      height: 30vh;
+    }
+    .video-container {
+      padding: 50px 140px;
+      margin-left: 0;
+    }
+    .video-container iframe {
+      height: 100%; 
+      width: 100%; 
+      border-width: 5px;
+      padding: 5px; 
+    }
+  }  
+
 
 
 /*FOOTER*/

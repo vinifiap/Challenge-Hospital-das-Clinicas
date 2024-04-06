@@ -255,6 +255,81 @@ button:hover {
     color: var(--nav);
 }
 
+@media (max-width: 1201px) {
+    #banner {
+      padding: 4rem; 
+    }
+  
+    #units-grid {
+      grid-template-columns: repeat(3, auto); 
+    }
+  
+    #banner-text h1 {
+      padding-right: 20%; 
+      font-size: 2.5rem; 
+    }
+  }
+
+  @media (min-width: 901px) and (max-width: 1200px) {
+    #banner {
+      padding: 3rem 8rem; 
+    }
+  
+    #units-grid {
+      grid-template-columns: repeat(2, auto); 
+    }
+  
+    #banner-text h1, #units-title h2 {
+      font-size: 2.8rem; 
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 900px) {
+    #banner, #problem-impact, .problem-impact-text {
+      padding: 2rem; 
+    }
+  
+    #banner-text h1, #units-title h2 {
+      font-size: 2.5rem; 
+    }
+  
+    #units-grid {
+      grid-template-columns: 1fr 1fr; 
+    }
+  
+    #units img, .unit-image {
+      width: auto; 
+      height: auto; 
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #banner {
+      padding: 1rem; 
+      flex-direction: column;
+    }
+  
+    #banner-text h1 {
+      font-size: 2rem; 
+      padding-right: 0; 
+    }
+  
+    #banner-text button, #units img, .unit-image {
+      width: auto; 
+      margin: 0 auto; 
+    }
+  
+    #units-grid {
+      grid-template-columns: 1fr; 
+    }
+  
+    .problem-impact-text, #problem, #problem-solving {
+      width: auto; 
+      padding: 10px; 
+    }
+  }
+  
+
 /*FOOTER*/
 
 footer {

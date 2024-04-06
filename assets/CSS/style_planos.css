@@ -113,12 +113,105 @@ button:hover {
 }
 
 
-
 /*main*/
 main {
-    height: 80vh;
     background: linear-gradient(to top, var(--footer), var(--main));
 }
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  .tab {
+    background: #9370DB;
+    color: #ffffff;
+    padding: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  #tooltip {
+    display: none;
+    position: absolute;
+    top: 20px; 
+    left: 0px;
+    right: 0; 
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    font-size: 16px; /* Larger font size for better readability */
+    line-height: 1.5; 
+    width: 70%; 
+    margin: auto; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    z-index: 100;
+  }
+
+  @media (max-width: 1201px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .grid-item {
+      padding: 15px;
+      font-size: 1.1rem;
+    }
+    #tooltip {
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: 901px) and (max-width: 1200px) {
+    .grid-item {
+      padding: 10px;
+      font-size: 1rem;
+    }
+    #tooltip {
+      font-size: 14px;
+      width: 80%;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 900px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-item {
+      padding: 15px;
+      font-size: 1rem;
+    }
+    #tooltip {
+      font-size: 13px;
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .container, .grid {
+      padding: 10px;
+    }
+    .grid {
+      grid-template-columns: 1fr;
+    }
+    .grid-item {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+    #tooltip {
+      font-size: 12px;
+      width: 100%;
+    }
+  }
 
 
 /*FOOTER*/
