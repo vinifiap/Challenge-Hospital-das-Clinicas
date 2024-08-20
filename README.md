@@ -3,34 +3,35 @@
 
 # 🚀 Challenge-Front-end-HC
 
-Bem-vindo(a) ao projeto de Front-end!
+Welcome to the Front-end project!
 
-O objetivo desta challenge era criar uma pagina HTML para a challenge do Hospital das Clinicas.
+The goal of this challenge was to create an HTML page for the Hospital das Clinicas challenge.
 
-> ⚠️ **Projeto Desenvolvido pelo Grupo**
-## 😎 Integrantes
+> ⚠️ **Project Developed by the Group**
+## 😎 Team Members
 - Gabriel Mediotti Marques - 552632
 - Jó Sales - 552679
 - Miguel Garcez de Carvalho - 553768
 - Vinicius Souza e Silva - 552781
 
-# 🧠 Contexto
+# 🧠 Context
 
-![Projeto](https://github.com/Vinissil/Challenge-front-end-HC/blob/main/img/logo%20HC.svg)
+![Project](https://github.com/Vinissil/Challenge-front-end-HC/blob/main/img/logo%20HC.svg)
 
-Projeto realizado em HTML, CSS com JavaScript e Media Queri para desenvolvimento das habilidades com a linguagem e aprimoramento:
-- [x] Projeto voltado a resolver os problemas trazidos pelo HC
-- [x] Busca em trazer soluções eficazes
+Project carried out using HTML, CSS with JavaScript, and Media Queries to develop language skills and improvement:
+- [x] Project aimed at solving the problems brought by HC
+- [x] Aiming to provide effective solutions
 
 
-## ✔️ Criação de páginas
+## ✔️ Page Creation
 
-Páginas criadas para o projeto CHALLENGE HC:
+Pages created for the CHALLENGE HC project:
 
 - Home
-- Proparatorios
-- Procedimentos
-- Planos de Saúde
+- Pre-operatory
+- Procedures
+- Health Plans
 
 
 Made by the SQUADTEAM FIAP 1ESPR.
+
